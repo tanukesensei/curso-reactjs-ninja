@@ -1,16 +1,19 @@
 'use strict'
 
-let React = require('react')
-
-let Title = React.createClass({
-    render: function() {
-        return React.createElement('h1', null, 'Titulo')}
-})
+import React from 'react';
 
 // let Title = React.createClass({
 //     render: function() {
-//         return <h1>Titulo</h1>
-//     }
-// });
+//         return React.createElement('h1', null, 'Titulo')}
+// })
 
-module.exports = Title
+/**
+ * sintaxe JSX abaixo.
+ */
+let Title = React.createClass({
+    render: function() {
+        return <h1>Titulo</h1>
+    }
+});
+
+export default Title;

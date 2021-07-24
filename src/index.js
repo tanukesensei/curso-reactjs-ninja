@@ -1,16 +1,20 @@
 'use strict'
 
-let React = require('react')
-let ReactDOM = require('react-dom')
+import Title from './app';
+import React from 'react';
+import { render } from 'react-dom';
 
-let Title = require('./app')
 
-ReactDOM.render(
-    React.createElement(Title),
-    document.querySelector('[data-js="app"]')
-);
-
-// ReactDOM.render(
-//     <Title />,
+// render(
+//     React.createElement(Title),
 //     document.querySelector('[data-js="app"]')
 // );
+
+
+/**
+ * sintaxe JSX abaixo 
+ */
+render(
+    <Title />,
+    document.querySelector('[data-js="app"]')
+);
