@@ -25,6 +25,13 @@ module.exports = {
     ],
 
     module: {
+        preLouders: [{
+            text: /\.js$/,
+            exclude: /node_modules/,
+            include: /src/,
+            loader: 'standart'
+        }],
+
         loaders: [{
             test: /\.js$/,
             exclude: /node_modules/,
